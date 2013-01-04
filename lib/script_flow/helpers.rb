@@ -8,7 +8,7 @@ module ScriptFlow
         end
         if content
            if request.xhr?
-             view_renderer.script_hash.add_script(content)
+             script_flow.add_script(content)
              nil
            else
              javascript_tag(content)
