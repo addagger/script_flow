@@ -1,6 +1,6 @@
 # ScriptFlow
 
-TODO: Write a gem description
+When you rendering the ERB templates/partials, utility remembers javascript syntax and add it to the end of Ajax response body
 
 ## Installation
 
@@ -18,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+View html.erb template/partial:
+
+    <%= script do %>
+      alert('Hello Script Flow');
+    <% end %>
+
+    # When current request format is Mime::HTML acts as `javascript_tag` helper. During Ajax request (Mime::JS) add script to the end of response body.
+
+		<%= script_for :head do %>
+		  alert('Hello Script Flow');
+		<% end %>
+		
+		# When current request format is Mime::HTML acts as `content_for :head` with `javascript_tag` helpers. During Ajax request (Mime::JS) add script to the end of response body.
 
 ## Contributing
 

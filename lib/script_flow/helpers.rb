@@ -7,10 +7,11 @@ module ScriptFlow
           content = capture(&block)
         end
         if content
-           if request.xhr?
+           case request.format
+					 when Mime::JS then
              script_flow.add_script(content)
              nil
-           else
+           when Mime::HTML then
              javascript_tag(content)
            end
         end

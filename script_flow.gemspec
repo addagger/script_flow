@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = ScriptFlow::VERSION
   gem.authors       = ["Valery Kvon"]
   gem.email         = ["addagger@gmail.com"]
-  gem.description   = %q{When you rendering the ERB templates/partials, utility remembers javascript syntax and add it to the end of JS response body}
+  gem.description   = %q{When you rendering the ERB templates/partials, utility remembers javascript syntax and add it to the end of Ajax response body}
   gem.summary       = %q{Auto load script from rendered ERB during Ajax request}
   gem.homepage      = ""
   gem.homepage      = %q{http://vkvon.ru/projects/script_flow}
