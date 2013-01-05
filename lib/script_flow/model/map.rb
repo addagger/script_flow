@@ -1,5 +1,5 @@
 module ScriptFlow
-	class Map
+  class Map
     attr_reader :content
 
     delegate :any?, :empty?, :to => :content

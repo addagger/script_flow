@@ -8,7 +8,7 @@ module ScriptFlow
         end
         if content
            case request.format
-					 when Mime::JS then
+           when Mime::JS then
              script_flow.add_script(content)
              nil
            when Mime::HTML then

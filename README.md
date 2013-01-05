@@ -26,11 +26,11 @@ View html.erb template/partial:
 
     # When current request format is Mime::HTML acts as `javascript_tag` helper. During Ajax request (Mime::JS) add script to the end of response body.
 
-		<%= script_for :head do %>
-		  alert('Hello Script Flow');
-		<% end %>
-		
-		# When current request format is Mime::HTML acts as `content_for :head` with `javascript_tag` helpers. During Ajax request (Mime::JS) add script to the end of response body.
+    <%= script_for :head do %>
+      alert('Hello Script Flow');
+    <% end %>
+    
+    # When current request format is Mime::HTML acts as `content_for :head` with `javascript_tag` helpers. During Ajax request (Mime::JS) add script to the end of response body.
 
 ## Contributing
 
